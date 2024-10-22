@@ -15,3 +15,4 @@ ul, li{list-style: none;}
 a{text-decoration: none; color: inherit;}
 h2{font-family: 'JalnanGothic';
 }
+html{scroll-behavior: smooth;}
