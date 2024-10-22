@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>넷마블</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="hwrap">
+            <div class="nav">
+                <div class="logo">
+                    <a href="#"><img src="./img/logo.png"></a>
+                </div>
+                <div class="btn_open">
+                    <a href="#"><img src="./img/btn_aside_open.png"></a>
+                </div>
+            </div><!--nav끝-->
+            <ul class="util">
+                <li><a href="#">CONPANY</a>
+                    <ul class="sub">
+                            <li><a href="#">넷마블</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">비전과 미션</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">BUSINESS</a>
+                    <ul class="sub">
+                        <li><a href="#">사업영역</a></li>
+                        <li><a href="#">넷마블게임</a></li>
+                        <li><a href="#">넷마블문화재단</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MEDIA</a>
+                    <ul class="sub"> 
+                        <li><a href="#">뉴스</a></li>  
+                    </ul>
+                </li>
+                <li><a href="#">CAREER</a>
+                    <ul class="sub">    
+                        <li><a href="#">인재채용</a></li>   
+                    </ul>
+                </li>
+                <li><a href="#">ESG</a>
+                    <ul class="sub">
+                        <li><a href="#">정도경영</a></li>
+                        <li><a href="#">지속가능경영</a></li>    
+                    </ul>
+                </li>
+                <li><a href="#">IR</a>
+                    <ul class="sub">
+                        
+                        <li><a href="#">기업지배구조</a></li>
+                        <li><a href="#">재무정보</a></li>
+                        <li><a href="#">공시정보</a></li>
+                        <li><a href="#">추가정보</a></li>
+                        <li><a href="#">IR자료실</a></li>
+                        
+                    </ul>
+                </li>
+            </ul><!--util끝-->
+            <div class="bg"></div>
+        </div><!--hwrap끝-->
+    </header><!-- 헤더자리 -->
+    <section>
+        <div class="row1">
+            <h2>넷마블 문화재단 목표</h2>
+            <div class="imgBox">
+                <div class="box1 box">
+                    <img src="./img/left-icon.png">
+                    <img src="./img/left-icon-hover.png" class="hover">
+                    <p>인재 키우기</p>
+                </div>
+                <div class="box2 box">
+                    <img src="./img/center-icon.png">
+                    <img src="./img/center-icon-hover.png" class="hover">
+                    <p>문화 만들기</p>
+                </div>
+                <div class="box3 box">
+                    <img src="./img/right-icon.png" data-aos="flip-left">
+                    <img src="./img/right-icon-hover.png" class="hover">
+                    <p>마음 나누기</p>
+                </div>
+            </div>
+        </div><!--row1-->
+        <div class="row2">
+            <div class="txt">
+                <h2>Foundation Identity</h2>
+                <p>넷마블 문화재단의 FI는 사랑을 쏘아 만든 희망의 별을 상징합니다.<br>
+                    기업의 의지와 임직원을 비롯한 다양한 이해관계자들의 마음을 담아<br>
+                    더 나은 사회로 발돋움할 수 있는 가능성을 열어간다는 의미를 담고 있습니다.
+                </p>
+            </div>
+            <div class="slide">
+            <div class="img">
+                <img src="./img/foundation image01.jpg">
+                <img src="./img/foundation image02.jpg">
+                <img src="./img/foundation image03.jpg">
+            </div>
+            </div>
+        </div><!--row2-->
+        <ul class="boxNav">
+            <li class="on"><img src="./img/left-icon.png"></li>
+            <li><img src="./img/center-icon.png"></li>
+            <li><img src="./img/right-icon.png"></li>
+        </ul>
+        <div class="row3">
+            <div class="box1 box">
+                <div class="b_wrap">
+                <div class="textBox">
+                    <img src="./img/left-icon.png" class="ico">
+                    <h2>인재 키우기</h2>
+                    <p>미래 문화 산업을 이끌어 갈 가능성 있는 인재들을<br>
+                        발굴하고 체계적인 성장을 지원하기 위해 다양한<br>
+                        기회를 마련하고 있습니다.
+                    </p>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/bg_img 01-01.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/bg_img 01-02.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/bg_img 01-03.jpg"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div><!--myswiper-->
+                </div>
+            </div><!--box1-->
+            <div class="box2 box">
+                <div class="b_wrap">
+                <div class="textBox">
+                    <img src="./img/center-icon.png" class="ico">
+                    <h2>문화 만들기</h2>
+                    <p>게임을 기반으로 다양한 문화적 가치를 공유하고<br>
+                        누구나 즐겁게 참여할 수 있는 교육 및 여가 문화를<br>
+                        만들어 가기 위해 다양한 활동을 전개하고 있습니다.
+                    </p>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/bg_img 02-01.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/bg_img 02-02.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/bg_img 02-03.jpg"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div><!--myswiper-->
+                </div>
+            </div><!--box2-->
+            <div class="box3 box">
+                <div class="b_wrap">
+                <div class="textBox">
+                    <img src="./img/right-icon.png" class="ico">
+                    <h2>마음 나누기</h2>
+                    <p>나눔이 가진 영향력과 가치를 알리고 <br>
+                        쉽게 동참할 수 있는 기회를 제공하여<br>
+                        모두가 즐거운 나눔 문화를 확산해가고 있습니다.
+                    </p>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/bg_img 03-01.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/bg_img 03-02.jpg"></div>
+                    <div class="swiper-slide"><img src="./img/bg_img 03-03.jpg"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div><!--myswiper-->
+                </div>
+            </div><!--box3-->
+        </div><!--row3-->
+        <div class="row4">
+            <h3>더 큰 세계로 밝은 미래로</h3>
+            <p>저희 넷마블 문화재단은 장애인 분들의 꿈을 지지합니다!!!</p>
+            <img src="./img/bg_img 04-01.jpg">
+        </div>
+    </section>
+    
+    <footer>
+        <div class="f_wrap">
+            <h1><img src="./img/footer_logo.png"></h1>
+            <address>
+                서울특별시 구로구 디지털로26길 38, G-Tower 넷마블<br>
+                Copyright © Netmarble Corp. All Rights Reserved
+            </address>
+            <ul>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">sns저작물 이용 동의서</a></li>
+                <li><a href="#">이메일 문의</a></li>
+                <li><a href="#">주무관청</a></li>
+                <li><a href="#">국세청</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

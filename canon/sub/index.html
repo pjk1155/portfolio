@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캐논서브</title>
+    <link rel="stylesheet" href="./sub.css">
+    <script type="importmap">
+        {
+            "imports":{
+                "three": "https://unpkg.com/three@0.141.0/build/three.module.js",
+                "gltf": "https://unpkg.com/three@0.141.0/examples/jsm/loaders/GLTFLoader.js",
+                "orbit": "https://unpkg.com/three@0.141.0/examples/jsm/controls/OrbitControls.js"
+            }
+        }
+    </script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  
+
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="../index.html">
+                <img src="./img/logo 1.png">
+            </a>
+        </h1>
+        <ul class="menu">
+            <li>카메라</li>
+            <li>렌즈</li>
+            <li>엑세서리</li>
+            <li>기타</li>
+            <li>멤버십</li>
+            <li>고객서비스</li>
+        </ul>
+        <ul class="nav">
+            <li><img src="./img/ico_1.png"></li>
+            <li><img src="./img/ico_2.png"></li>
+            <li><img src="./img/ico_3.png"></li>
+            <li class="ham"><img src="./img/ico_4.png"></li>
+        </ul>
+    </header>
+    <main>
+       
+      <canvas id="canvas">
+        <div id="progress-bar-container">
+            <label for="progress-bar">loading...</label>
+            <progress id ="progress-bar" value="0" max="100"></progress>
+
+      </canvas>
+    </main>
+    <div class="section">
+    <div class="bn">
+        <img src="./subimg/main-pc2.png" class="pc">
+        <img src="./subimg/main-mob.jpg" class="mob">
+    </div>
+    <div class="row1">
+        <div class="imgBox">
+            <img src="./subimg/img1.jpg">
+        </div>
+        <div class="txtBox">
+            <h2>2010만 화소의<br>
+                풀프레임 CMOS 센서</h2>
+            <p>해상도와 노이즈, 모아레 등 모든 광학 성능에서<br>
+                화질을 향상시켰습니다.<br>
+                약 2010만 화소의 CMOS 센서 해상도에서도<br>
+                EOS-1D X Mark II보다 더 뛰어난<br>
+                고화질의 이미지를 얻을 수 있습니다.</p>
+        </div>
+    </div><!--row1-->
+    <div class="row2">
+        <div class="imgBox">
+            <img src="./subimg/img2.jpg">
+        </div>
+        <div class="txtBox">
+            <h2>새로운 영상 엔진 DIGIC X<br>
+                하나의 엔진으로도 뛰어난 이미지</h2>
+            <p>EOS-1D X Mark III는 기존과 달리<br>
+                영상 엔진을 하나만 사용합니다.<br>
+                싱글 DIGIC X 엔진은 화질과 기능성에 있어<br>
+                EOS-1D X Mark II의 듀얼 DIGIC 6+ 시스템보다<br>
+                약 3.1배 빠른 영상 처리 속도 및 380배 빠른<br>
+                연산 처리 성능과 더 적은 전력 소비를 자랑합니다.</p>
+        </div>
+    </div><!--row2-->
+    <div class="row3">
+        <div class="imgBox">
+            <img src="./subimg/img3.jpg">
+        </div>
+        <div class="txtBox">
+            <h2>결정적 순간을 포착하는<br>
+                최대 약 20장의 고속 연속 촬영</h2>
+            <p>결정적 순간의 포착 확률을 높이는 데 있어서<br>
+                연속 촬영 속도 향상은 포토그래퍼에게<br>
+                아주 중요한 요소입니다.<br>
+                EOS-1D Mark III는 뷰파인더 촬영 시에도<br>
+                고속 연속 촬영 성능을 제공합니다.</p>
+        </div>
+    </div><!--row3-->
+    <div class="row4">
+        <div class="imgBox">
+            <img src="./subimg/img4.jpg">
+        </div>
+        <div class="txtBox">
+            <h2>최신 반도체 기술을 사용한 AF 디자인<br>
+                신개발 High-res AF 센서</h2>
+            <p>이미지 센서 제조 기술을 활용해<br>
+                기존의 라인 센서를 사용하지 않고 스퀘어 픽셀로<br>
+                AF 센서를 새롭게 개발함으로써<br>
+                감도 향상, 밀도 증가, 크로스 AF 가능 포인트를<br>
+                확충했습니다.</p>
+        </div>
+    </div><!--row4-->
+    <div class="row5">
+        <div class="imgBox">
+            <img src="./subimg/img5.jpg">
+        </div>
+        <div class="txtBox">
+            <h2>크롭 없는 4K 60P EOS MOVIE</h2>
+            <p>35mm 풀프레임 센서의 고화질과<br>
+                얕은 피사계 심도를 살린 표현으로<br>
+                최대 5.5K 고해상도 RAW 영상뿐만 아니라<br>
+                4K DCI, UHD 해상도로 촬영이 가능합니다. </p>
+        </div>
+    </div><!--row5-->
+    <div class="row6">
+        <div class="imgBox">
+            <img src="./subimg/img6.jpg">
+        </div>
+        <div class="txtBox">
+            <h2>리모트 컨트롤을 위한<br>
+                Wi-Fi / Bluetooth 탑재</h2>
+            <p>EOS-1D 시리즈 최초로 Wi-Fi 유닛을<br>
+                내장 Bluetooth Low Energy 기술을 사용해<br>
+                Camera Connect를 설치한 스마트 기기와<br>
+                자동으로 연결합니다.</p>
+        </div>
+    </div><!--row6-->
+    </div>
+    <footer>
+        <h1><a href="#">
+            <img src="./img/logo 1.png">
+        </a></h1>
+        <ul class="f_menu">
+            <li><a href="#">매장안내</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">매거진</a></li>
+            <li><a href="#">임직원인증</a></li>
+        </ul>
+        <ul class="f_menu2">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">영상정보처리기기운영관리방침</a></li>
+        </ul>
+        <p>
+        캐논코리아 | (주) 대표자 : 박정우, 코시미즈 요시유키 | 사업자등록번호 : 120-81-15636 | 통신판매 번호 : 강남-01282
+        주소 : 서울특별시 강남구 테헤란로 607 (삼성동) | 복합기 • 카메라 고객상담실 : 1533-3355
+        Copyright © CANON KOREA All Rights reserved
+    
+        </p>
+        <div class="f_imgBox">
+            <img src="./img/img_footer_2.png">
+            <img src="./img/img_footer_3.png">
+            <img src="./img/img_footer_4.png">
+        </div>
+        <div class="f_img">
+        <img src="./img/image 2.png">
+        <img src="./img/image 3.png">
+        </div>
+    </footer>
+
+
+</body>
+</html>

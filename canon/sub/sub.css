@@ -1,0 +1,306 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{margin: 0; padding: 0;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  ul{list-style: none;}
+  a{text-decoration: none; color: inherit;}
+  img{vertical-align: top;}
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+  
+}
+/* 헤더 */
+header{
+    width: 100%; height: 60px;
+    background-color: #fff;
+    display: flex;
+    color: #000;
+    position: fixed;
+    z-index: 100;
+}
+header h1{
+  position: absolute;
+  top: 50%; left: 5%;
+  transform: translateY(-50%);
+}
+.nav{
+  position: absolute;
+  top: 50%; right: 5%;
+  transform: translateY(-50%);
+}
+.nav li{margin-left: 30px;}
+.menu{position: absolute;
+  top: 60px; right: 0;
+  width: 80%; height: 100vh;
+  background-color: #141414;
+  color: #fff;
+  text-align: right;
+  display: none;
+}
+.nav{display: flex;}
+
+/* 메인 */
+main{
+  width: 100%; height: 100vh;
+  background-image: url(./subimg/back3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#canvas{
+ position: absolute; left: 50%; top: 50%;
+ transform: translate(-50%, -50%);
+}
+#progress-bar-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%; height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #000;
+  overflow: hidden;
+}
+label{
+  font-size: 2rem;
+  padding-bottom: 7px;
+}
+#progress-bar{
+  width: 30%; height: 3%;
+}
+.bn{
+  width: 100%; height: auto;
+}
+.bn .pc{
+  width: 100%; height: auto;
+  display: none;
+}
+.bn .mob{
+  width: 100%; height: auto;
+}
+.row1{
+  width: 100%; height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20%;
+  transition: all 0.5s linear;
+}
+.row2{
+  width: 100%; height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20%;
+  transition: all 0.5s linear;
+}
+.row3{
+  width: 100%; height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20%;
+  transition: all 0.5s linear;
+}
+.row4{
+  width: 100%; height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20%;
+  transition: all 0.5s linear;
+}
+.row5{
+  width: 100%; height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20%;
+  transition: all 0.5s linear;
+}
+.row6{
+  width: 100%; height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  transition: all 0.5s linear;
+}
+.imgBox img{
+  width: 100%; height: auto;
+}
+.txtBox{
+  margin-top: 5%;
+  text-align: center;
+}
+.txtBox h2{
+  font-size: 5vw;
+  margin-bottom: 5%;
+}
+.txtBox p{
+  font-size: 2vw;
+}
+
+/* 푸터 */
+footer{
+    width: 100%;
+    background-color: #141414;
+  }
+  footer h1{
+    padding-top: 3%;
+    text-align: center;
+  }
+  .f_menu{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  .f_menu li{
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .f_menu li:nth-child(6){
+    margin-right: 0;
+  }
+  .f_menu2{
+    display: flex;
+    margin: 20px 5% 20px;
+  }
+  .f_menu2 li{
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  footer p{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .f_imgBox{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .f_imgBox img{margin-right: 40px;}
+  .f_imgBox img:nth-child(3){
+    margin-right: 0;
+  }
+  .f_img img{
+    width: 100%;
+  }
+  /* pc */
+@media all and (min-width:1200px){
+    /* pc헤더 */
+    .menu{display: flex;
+      position: absolute;
+      right: unset; 
+      top: unset;
+      left: 50%; top: 50%;
+      transform: translate(-50%, -50%);
+      width: unset; height: unset;
+      background-color: unset;
+      color: unset;
+      text-align: center;
+    }
+    .menu li{margin-right: 5vw;}
+    .menu li:nth-child(6){margin-right: 0;}
+    .nav li:nth-child(4){display: none;}
+    /* pc메인 */
+    .bn .pc{display: block;}
+    .bn .mob{display: none;}
+    .section{
+      overflow: hidden;}
+    .txtBox h2{font-size: 2.5vw;}
+    .txtBox p{font-size: 1.5vw;}
+    .txtBox{
+      width: 40%;
+      text-align: left;
+    }
+    .imgBox{width: 50%;}
+    .row1{
+      height: auto;
+      flex-direction: unset;
+      overflow: hidden;
+    }
+    .row1 .imgBox{margin-right: 5%;}
+    .row2{
+      height: auto;
+      flex-direction: unset;
+      flex-direction: row-reverse;
+      overflow: hidden;
+    }
+    .row2 .imgBox{margin-left: 5%;}
+    .row2 .txtBox{
+      text-align: right;
+    }
+    .row3{
+      height: auto;
+      flex-direction: unset;
+      overflow: hidden;
+    }
+    .row3 .imgBox{margin-right: 5%;}
+    .row4{
+      height: auto;
+      flex-direction: unset;
+      flex-direction: row-reverse;
+      overflow: hidden;
+    }
+    .row4 .imgBox{margin-left: 5%;}
+    .row4 .txtBox{
+      text-align: right;
+    }
+    .row5{
+      height: auto;
+      flex-direction: unset;
+      overflow: hidden;
+    }
+    .row5 .imgBox{margin-right: 5%;}
+    .row6{
+      height: auto;
+      flex-direction: unset;
+      flex-direction: row-reverse;
+      overflow: hidden;
+    }
+    .row6 .imgBox{margin-left: 5%;}
+    .row6 .txtBox{
+      text-align: right;
+    }
+    /* pc푸터 */
+    footer{
+        position: relative;
+      }
+      footer h1{
+        position: absolute;
+        top: 25%; right: 10%;
+      }
+      footer h1 img{
+        width: 270px;
+      }
+      .f_img{display: flex;}
+      .f_menu{padding-top: 50px;}
+      .f_menu li{font-size: 18px;
+        margin-right: 3%;
+      }
+      .f_menu2{
+        margin-top: 10%;
+      }
+      footer p{
+        width: 50%;
+        padding-bottom: 10%;
+      }
+      .f_imgBox{
+        position: absolute;
+        top: 50%; right: 12%;
+      }
+}
+@media all and (min-width: 740px){
+  .f_img{
+    display: flex;
+  }
+}
+
+  

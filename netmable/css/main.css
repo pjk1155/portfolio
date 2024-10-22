@@ -1,0 +1,129 @@
+@charset "utf-8";
+body{background-color: black;}
+main{width: 100%;background-color: black;margin-bottom: 100px;}
+/*row1*/
+.row1{width: 100%;height: 100vh;}
+.row1>video{width: 100%;height: 100%;object-fit: cover;}
+
+/*row2*/
+.row2{width: 100%;background-color: black;padding-bottom: 60px;}
+.row2>img{width: 100%;height: auto;margin-top: 10%;
+margin-bottom: 10%;}
+.row2>.txt{color: #fff;text-align: center;margin-bottom: 30px;}
+.row2>.txt>h2{font-size: 40px;}
+.row2>.txt>span{margin-top: 10px;display: block;
+font-weight: bold;line-height: 1.5;}
+
+/*row3*/
+.txt_01{color: #fff;width: 80%;margin-bottom: 100px;}
+.txt_01>h2{font-size: 40px;margin: 15px 0;}
+.txt_01>span{line-height: 1.3;}
+.row3{width: 80%;margin: 50px auto;border-top: 2px solid #fff;
+padding-bottom: 80px;}
+.row3 .mg-01{width: 100%;height: auto;margin-bottom: 20px;}
+.row3 .mg-02{width: 100%;height: auto;margin-bottom: 20px;}
+.row3 .mg-03{width: 100%;height: auto;margin-bottom: 20px;}
+.row3 .mg-04{width: 100%;height: auto;margin-bottom: 20px;}
+.row3 .mg-05{width: 100%;height: auto;margin-bottom: 20px;}
+.row3 .mg-06{width: 100%;height: auto;}
+
+/*row4*/
+.txt_02{color: #fff;width: 90%;margin-bottom: 100px;}
+.txt_02>h2{font-size: 40px;margin: 15px 0;}
+.txt_02>span{line-height: 1.3;}
+.row4{width: 80%;margin: 50px auto;border-top: 2px solid #fff;
+padding-bottom: 100px;}
+.row4 .box1{width: 100%;height: auto;margin-bottom: 20px;}
+.row4 .box2{width: 100%;height: auto;margin-bottom: 20px;}
+.row4 .box3{width: 100%;height: auto;}
+.row4 .box1 .cu-01{width: 100%;height: auto;}
+.row4 .box2 .cu-02{width: 100%;height: auto;}
+.row4 .box3 .cu-03{width: 100%;height: auto;}
+.cu_box01 .box1:hover .cu-01{scale: 1.2;transition: 0.5s;}
+.cu_box01 .box1{overflow: hidden;}
+.cu_box02 .box2:hover .cu-02{scale: 1.2;transition: 0.5s;}
+.cu_box02 .box2{overflow: hidden;}
+.cu_box02 .box3:hover .cu-03{scale: 1.2;transition: 0.5s;}
+.cu_box02 .box3{overflow: hidden;}
+
+/*swiper*/
+.txt_03>h2{font-size: 40px;color: #fff;}
+.txt_03{width: 80%;margin: 100px auto;border-top: 2px solid #fff;}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 17px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide p{height: 50px;display: block;overflow: hidden;}
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .mySwiper{width: 80%;height: auto;}
+  .swiper-slide p{width: 90%;
+   margin: 10px auto;
+   font-weight: bold;
+}
+
+
+/*태블릿*/
+@media all and (min-width:800px){
+    .row2 .txt{width: 400px;height: 170px;
+    background-color: black;
+    position: absolute;bottom: 250px;right: 0;}
+    .row2{position: relative;}
+    /*row3*/
+    .row3 .img_box{display: flex;justify-content: space-between;
+    height: auto;}
+    .row3 .img_box .img_box01{width: 49%;}
+    .row3 .img_box .img_box02{width: 49%;}
+    .row3 .mg-03{margin-bottom: 0;}
+    .txt_01>h2{font-size: 60px;}
+    .txt_01>span{font-size: 20px;}
+    /*row4*/
+    .cu_box{width: 100%;height: auto;
+    display: flex;
+    justify-content: space-between;align-items: center;}
+    .cu_box01{width: 49%;height: auto;}
+    .cu_box02{width: 49%;height: auto;}
+    .row4 .cu-01{margin-bottom: 0;}
+    .row4 .cu-02{margin-bottom: px;}
+    .txt_02>h2{font-size: 60px;}
+    .txt_02>span{font-size: 20px;}
+    .txt_03>h2{font-size: 60px;margin-bottom: 40PX;}
+    .row4{width: 80%;margin: 20% auto;}
+    .cu_box02 .box2{overflow: hidden;}
+  
+
+
+    
+
+}/*태블릿 끝*/
+/*pc*/
+@media all and (min-width:1440px){
+    .row2 .txt{width: 600px;height: 300px;
+        bottom: 300px;right: 100px;}
+        .row2 .txt>h2{font-size: 60px;}
+        .row2 .txt>span{font-size: 32px;}
+        /*row3끝*/
+        .row3 .img_box .img_box02{width: 49%;padding-top: 100px;}
+        .txt_01>h2{font-size: 60px;}
+        .txt_01>span{font-size: 30px;}
+        /*row4*/
+        .txt_02>h2{font-size: 60px;}
+        .txt_02>span{font-size: 30px;}
+        .txt_03>h2{font-size: 60px;margin-bottom: 70PX;margin-top: 50PX;}
+
+
+}/*pc 끝*/

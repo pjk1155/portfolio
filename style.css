@@ -1,0 +1,393 @@
+@charset "utf-8";
+body{
+    width: 100%; height: 100%;
+    font-family: "Red Hat Display", sans-serif;
+}
+main{
+    width: 100%; height: 100vw;
+    background-image: url(./img/main-1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+h1{text-align: center;
+    font-size: 9vw;
+}
+main h1{
+    color: var(--color-text);
+    font-size: 13vw;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+main .name{
+    color: var(--color-text);
+    text-align: right;
+    position: absolute;
+    right: 21vw;
+    bottom: 10%;
+    font-size: 5vw;
+}
+main img{
+    position: absolute;
+    right: 4vw;
+    bottom: 10%;
+    width: 15vw;
+}
+
+/* row1 */
+.row1{
+    background-color: #101010;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    color: var(--color-text);
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.row1 h1{
+    margin-bottom: 10%;
+}
+.row1 .vertical{
+display: none;
+}
+.row1 img{
+    width: 100%; height: auto;
+}
+.row1 .txt_box{
+    margin: 0 auto;
+    padding: 10%;
+    box-sizing: border-box;
+    transition: all 1s linear;
+}
+.txt_box img{
+    width: auto; height: 25px;
+    margin-left: 5px;
+}
+.box1{
+    width: 90%; margin: 0 auto;
+}
+.box2{
+    width: 90%; margin: 0 auto;
+}
+.box3{
+    width: 90%; margin: 0 auto;
+}
+.box4{
+    width: 90%; margin: 0 auto;
+}
+.row1 h2{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.row1 .go{
+    display: flex;
+    align-content: center;
+    margin-top: 10%;
+    justify-content: center
+}
+.row1 .go a{
+    width: 100px;
+    border: 2px solid #d9d9d9; 
+    padding: 2px;
+    background-color: #b4b4b4;
+    text-align: center;
+    margin-right: 5px;
+}
+.row1 .go a:hover{
+    background-color: #101010;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px #b4b4b4;
+}
+/* row2 */
+.row2{
+    width: 90%; height: 100vw;
+    margin: 20% auto;
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    overflow: hidden;
+    padding-top: 10%;
+    box-sizing: border-box;
+}
+.row2 .swiper {
+    width: 100%; height: 70%;
+    margin-top: 10%;
+    background-image: url(./img/back.png);
+    background-position: 50%;
+}
+.row2 .swiper-wrapper{
+    width: 80%; height: 100%;
+    display: flex;
+    align-items: center;
+}
+.row2 .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row2 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.row2 .swiper-slide img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+    box-shadow: 0px 5px 10px #000000;
+}
+.row2 .slide1{
+    width: 60%; height: auto;
+}
+.row2 .slide2{
+    width: 60%; height: 50%;
+}
+.row2 .slide3{
+    width: 65%; height: 90%;
+}
+.row2 .slide4{
+    width: 65%; height: 60%;
+}
+.row2 .slide5{
+    width: 50%; height: 70%;
+}
+.view{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%; height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 900;
+    display: none;
+}
+.viewPic{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+.view img{
+    width: 100%; height: auto;
+}
+.view1 .viewPic{
+    width: 30%;
+}
+.view4 .viewPic{
+    width: 50%;
+}
+.viewX{
+    position: absolute;
+    top: 20px; right: 20px;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.bgClose{width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;}
+/* row3 */
+.row3{
+    width: 100%; height: 100vw;
+    position: relative;
+    background-image: url(./img/background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top 10%;
+}
+.row3 h1{
+    margin-bottom: 5%;
+}
+.row3 .skill{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3%;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 71%, 0.8);
+}
+.row3 .tools{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.row3 .tools img{
+    height: 14vw;
+    margin-right: 5%;
+}
+/* row4 */
+.row4{
+    width: 100%; height: 100vw;
+    position: relative;
+}
+.row4 h1{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media all and (min-width:1024px){
+    main{
+        height: 100vh;
+        background-image: url(./img/main-1.png);
+    }
+    .row1{
+        position: relative;
+        padding-bottom: 20%;
+    }
+    .row1 h1{
+        display: none;
+    }
+    .row1 .vertical{
+        display: block;
+        font-size: 9vw;
+        transform: rotate(90deg);
+        font-weight: bold;
+        width: 150%;
+        position: absolute;
+        top: 46%; left: -25%;
+    }
+    .row1 .vertical::before{
+        display: block;
+        content: '';
+        position: absolute;
+        top: 50%; left: 0;
+        transform: translateY(-50%);
+        z-index: 100;
+        width: 300px;
+        height: 9vw;
+        background: linear-gradient(to right, #101010 0%, rgba(4, 3, 9, 0) 100%);
+    }
+    .row1 .vertical::after{
+        display: block;
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 100;
+        width: 300px;
+        height: 9vw;
+        background: linear-gradient(to left, #101010 0%, rgba(4, 3, 9, 0) 100%);
+    }
+    .row1 .row1_box{
+        display: flex;
+        justify-content: space-between;
+    }
+    .row1 h2{
+        margin-top: 50%;
+    }
+    .box1:hover .txt_box{
+        opacity: 1;
+    }
+    .box2:hover .txt_box{
+        opacity: 1;
+    }
+    .box3:hover .txt_box{
+        opacity: 1;
+    }
+    .box4:hover .txt_box{
+        opacity: 1;
+    }
+    .row1 .go a{
+        width: 150px;
+        transition: all 0.3s linear;
+    }
+    .box1{
+        width: 40%; height: auto;
+        position: relative;
+        margin-left: 5%;
+    }
+    .row1 .txt_box{
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        opacity: 0;
+    }
+    .box2{
+        width: 40%;  height: auto;
+        position: relative;
+        top: 150px; right: 5%;
+        margin: unset;
+    }
+    .box2 .txt_box{
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+    }
+    .bottom_box{
+        margin-top: 10%;
+    }
+    .box3{
+        width: 40%; height: auto;
+        position: relative;
+        margin-left: 5%;
+    }
+    .box3 .txt_box{
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+    }
+    .box4{
+        width: 40%; height: auto;
+        position: relative;
+        top: 150px; right: 5%;
+        margin: unset;
+    }
+    .box4 .txt_box{
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+    }
+    .row2{
+        height: 100vh;
+        padding-top: unset;
+    }
+    .row2 .swiper{
+        margin-top: 5%;
+    }
+    .row2 h1{
+        text-align: left;
+        margin-left: 10%;
+    }
+    .row2 .slide1{
+        height: auto;
+    }
+    .row2 .slide2{
+        height: unset;
+    }
+    .row2 .slide3{
+        height: unset;
+    }
+    .row2 .slide4{
+        height: unset;
+    }
+    .row2 .slide5{
+        height: 100%;
+    }
+    .row3{
+        height: 100vh;
+    }
+    .row3 h1{
+        text-align: left;
+        margin-left: 15%;
+    }
+    .row3 .tools img{
+        height: 130px;
+    }
+    .row4{
+        height: 100vh;
+    }
+}
+@media all and (min-width:1600px){
+    .row2 .slide1{
+        height: 60vh;
+    }
+    .row3 .skill{
+        width: 70%;
+    }
+}

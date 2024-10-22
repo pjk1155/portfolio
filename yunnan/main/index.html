@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>운남관즈</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <div class="h_wrap">
+            <a href="#"><img src="./images/logo.jpg"></a>
+            <ul class="util">
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">매장안내</a></li>
+                <li><a href="#">브랜드</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">가맹절차</a></li>
+                <li><a href="#">가맹문의</a></li>
+            </ul>
+        </div><!--h_wrap-->    
+    </header>
+    <main>
+        <div class="m_wrap">
+            <div class="boxWrap bw1">
+            <div class="box1 box">
+                <img src="./images/main_01.png">
+                <div class="menu">
+                    <h2>미씨엔</h2>
+                    <p>돼지뼈로 우려낸 육수에<br>
+                    숙주, 느타리버섯, 건두부,<br>
+                    목이버섯, 청경채, 우삼겹을<br>
+                    넣고 끓인 운남쌀국수<br>
+                    운남관즈 대표메뉴
+                    </p>
+                </div>
+            </div>
+            </div><!--boxWrap-->
+            <div class="boxWrap bw2">
+            <div class="box2 box">
+                <img src="./images/main_02.png">
+                <div class="menu">
+                    <h2>탄탄<br>미씨엔</h2>
+                    <p>참깨, 땅콩 소스와<br>
+                        특제 고추기름을 섞어<br>
+                        만들어낸 양념에<br>
+                        청경채와 고기 고명을<br>
+                        올린 운남관즈만의<br>
+                        비빔 쌀국수
+                    </p>
+                </div>
+            </div>
+            </div><!--boxWrap-->
+            <div class="boxWrap bw3">
+            <div class="box3 box">
+                <img src="./images/main_03.png">
+                <div class="menu">
+                    <h2>동파육<br>덮밥</h2>
+                    <p>통삼겹살에 향신료를 넣어<br>
+                        만든 동파육과<br>
+                        숙주, 청경채를 곁들인<br>
+                        동파육 덮밥
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div class="boxWrap bw4">
+            <div class="box4 box">
+                <img src="./images/main_04.png">
+                <div class="menu">
+                    <h2>마파두부<br>덮밥</h2>
+                    <p>다진 돼지고기와 두부,<br>
+                        계란을 넣고<br>
+                        마파소스로 매콤하게<br>
+                        맛을 낸<br>
+                        마파두부 덮밥
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div><!--m_wrap-->    
+            <ul class="menuBox">
+                <li class="on">
+                    <p>미씨엔</p>
+                    <img src="./images/main_01.png">
+                </li>
+                <li>
+                    <p>탄탄<br>미씨엔</p>
+                    <img src="./images/main_02.png">
+                </li>
+                <li>
+                    <p>동파육<br>덮밥</p>
+                    <img src="./images/main_03.png">
+                </li>
+                <li>
+                    <p>마파두부<br>덮밥</p>
+                    <img src="./images/main_04.png">
+                </li>
+            </ul>
+    </main>
+    <div class="row1">
+        <h2>사이드 메뉴</h2>
+        <ul class="side">
+            <li class="side1">
+                <img src="./images/side_01.png">
+                <div class="txt">
+                    <h2>닭날개튀김</h2>
+                    <p>각종 향신료로<br>
+                        튀김옷을 입혀<br>
+                        30시간 숙성시킨 뒤<br>
+                        쯔란시즈닝을 뿌린<br>
+                        닭날개튀김    
+                    </p>
+                </div>
+            </li>
+            <li class="side2">
+                <img src="./images/side_02.png">
+                <div class="txt">
+                    <h2>꿔바로우</h2>
+                    <p>운남관즈만의<br>
+                        특별한 흑초소스로<br>
+                        달콤하고<br>
+                        짭잘한 맛으로<br>
+                        튀겨낸 꿔바로우    
+                    </p>
+                </div>         
+            </li>
+            <li class="side3">
+                <div class="txt">
+                    <h2>가지튀김</h2>
+                    <p>신선한 가지에<br>
+                        달짝 매콤한 소스를<br>
+                        입혀낸 가지튀김
+                    </p>
+                </div>
+                <img src="./images/side_03.png">
+            </li>
+            <li class="side4">
+                <div class="txt">
+                    <h2>연유꽃빵</h2>
+                    <p>바삭하게 튀긴<br>
+                        꽃빵과<br>
+                        달달한 연유의 조합
+                    </p>
+                </div>
+                <img src="./images/side_04.png">
+            </li>
+        </ul>
+    </div><!--row1-->
+    <div class="row2">
+        <div class="row2_wrap">
+            <img src="./images/story.jpg">
+            <div class="story">
+                <img src="./images/logo.jpg">
+                <div class="textBox">
+                    <h2>브랜드스토리</h2>
+                    <p>운남관즈는<br>
+                       운남의 식당이라는 뜻으로<br>
+                       홍콩식 운남미씨엔을<br>
+                       한국의 입맛에 맞게 로컬라이징한 것을 시작으로<br>
+                       다양한 중식을 운남관즈만의 재해석으로<br>
+                       손님들께 정성으로 대접해드립니다. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><!--row2-->
+    <div class="row3">
+        <h2>매장 위치</h2>
+        <div class="imgBox">
+            <img src="./images/location.jpg">
+        </div>
+        <p>부산 해운대구 우동1로38번길 14-6 1층</p>
+    </div><!--row3-->
+    <div class="row4">
+        <ul class="row4_wrap">
+            <li><img src="./images/emo_01.png" class="emo1"></li>
+            <li><img src="./images/emo_02.png" class="emo2"></li>
+            <li><img src="./images/emo_03.png" class="emo3"></li>
+            <li class="imgBox">
+                <div class="txt">
+                    <p>운남관즈만의</p>
+                    <h2>힙한 감성</h2>
+                </div>
+                <div class="imageBox">
+                    <img src="./images/emo_04.png" class="emo4">
+                </div>    
+            </li>
+            <li><img src="./images/emo_05.png" class="emo5"></li>
+        </ul><!--1360px-->
+    </div><!--row4-->
+    <div class="row5">
+        <img src="./images/event.jpg">
+    </div>
+    <div class="row7">
+        <h2>가맹 절차</h2>
+        <div class="row7_wrap">
+            <img src="./images/fran_01.png" data-aos="zoom-in-up">
+            <img src="./images/fran_02.png" data-aos="zoom-in-up">
+            <img src="./images/fran_03.png" data-aos="zoom-in-up">
+            <img src="./images/fran_04.png" data-aos="zoom-in-down">
+            <img src="./images/fran_05.png" data-aos="zoom-in-down">
+            <img src="./images/fran_06.png" data-aos="zoom-in-down">
+        </div>   
+    </div><!--row7-->
+    <div class="row8">
+        <h2>가맹 문의</h2>
+        <div class="row8_wrap">
+            <label>개인정보 수집/이용 동의</label>
+            <div class="info">
+                1. 개인정보의 수집 및 이용 목적<br>
+                가맹 관련 문의 확인 및 답변을 위한 연락통지, 처리결과 통보 등을 목적으로 개인정보를 처리합니다.<br>
+                <br>
+                2. 처리하는 개인정보 항목<br>
+                - 필수항목 : 이름, 연락처 (접속 IP 정보, 쿠키, 서비스 이용 기록, 접속 로그)<br>
+                - 선택항목 : 이메일<br>
+                <br>
+                3. 개인정보의 처리 및 보유 기간<br>
+                ① 법령에 따른 개인정보 보유.이용기간 또는 정보주체로부터 개인정보를 수집 시에 동의 받은 개인정보 보유, 이용기간 내에서 개인정보를 처리, 보유합니다.<br>
+                ② 개인정보의 보유 기간은 3년입니다.<br>
+            </div>           
+            <div class="ch">
+            <input type="checkbox" class="check">
+            <label>개인정보 수집 및 이용에 동의합니다.</label><br>
+            </div>
+            <ul>
+                <li>
+                    <label>이름</label><br>
+                    <input type="text"></li>
+                <li class="tel">
+                    <label>연락처</label><br>
+                    <input type="tel"> - <input type="tel"> - <input type="tel"></li>
+                <li>
+                    <label>이메일</label><br>
+                    <input type="email"> @ <input type="email"></li>
+                <li>
+                    <label>제목</label><br>
+                    <input type="text"></li>
+                <li>
+                    <label>내용</label><br>
+                    <input type="text" class="txt"></li>
+            </ul>
+            <button type="submit" class="button">
+                문의하기
+            </button>
+        </div><!--925px-->
+    </div><!--row8-->
+    <footer>
+        <div class="f_wrap">
+            <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">채용안내</a></li>
+            </ul>
+            <p>운남관즈 | 전화번호 : 0507-1424-8990 | 사업자번호 : -------------- | 부산 해운대구 우동1로38번길 14-6 1층</p>
+        </div>
+    </footer>
+    <script>
+        $('.menuBox>li').on('click',function(){
+            let i = $(this).index();
+            
+            $('.m_wrap').children('.boxWrap').eq(i).show()
+            .siblings().hide()
+            $(this).addClass('on')
+            .siblings().removeClass('on')
+        })
+
+        gsap.from('.side .side1',{
+            x:-200,autoAlpha:0,
+            scrollTrigger:{
+                trigger: '.row1',
+                start:'top 50%',
+                end :'top 70%',
+                scrub:true,
+            }
+        })
+        gsap.from('.side .side2',{
+            x:200,autoAlpha:0,
+            scrollTrigger:{
+                trigger: '.row1',
+                start:'top 35%',
+                end :'top 55%',
+                scrub:true,
+            }
+        })
+        gsap.from('.side .side3',{
+            x:-200,autoAlpha:0,
+            scrollTrigger:{
+                trigger: '.row1',
+                start:'top 20%',
+                end :'top 40%',
+                scrub:true,
+            }
+        })
+        gsap.from('.side .side4',{
+            x:200,autoAlpha:0,
+            scrollTrigger:{
+                trigger: '.row1',
+                start:'top 5%',
+                end :'top 25%',
+                scrub:true,
+            }
+        })
+        gsap.from('.story img',{
+            y:200,autoAlpha:0,
+            scrollTrigger:{
+                trigger: '.row2',
+                start:'top 50%',
+                end :'top 35%',
+                scrub:true,
+            }
+        })
+        gsap.from('.row2_wrap>img',{
+            y:200,autoAlpha:0,
+            scrollTrigger:{
+                trigger: '.row2',
+                start:'top 30%',
+                end :'top 35%',
+                scrub:true,
+            }
+        })
+        gsap.from('.story .textBox',{
+            y:200,autoAlpha:0,
+            scrollTrigger:{
+                trigger: '.row2',
+                start:'top 20%',
+                end :'top 35%',
+                scrub:true,
+            }
+        })
+        gsap.from('.row4 .emo1',{
+            y:200,autoAlpha:0,
+            scrollTrigger:{
+                trigger: '.row4',
+                start:'top 50%',
+                end :'top 35%',
+                scrub:true
+            }
+        })
+        gsap.from('.row4 .emo2',{
+            y:200,autoAlpha:0,
+            scrollTrigger:{
+                trigger: '.row4',
+                start:'top 40%',
+                end :'top 35%',
+                scrub:true
+            }
+        })
+        gsap.from('.row4 .emo3',{
+            y:200,autoAlpha:0,
+            scrollTrigger:{
+                trigger: '.row4',
+                start:'top 30%',
+                end :'top 35%',
+                scrub:true
+            }
+        })
+        gsap.from('.row4 .emo4',{
+            y:200,autoAlpha:0,
+            scrollTrigger:{
+                trigger: '.row4',
+                start:'top 10%',
+                end :'top 35%',
+                scrub:true
+            }
+        })
+        gsap.from('.row4 .emo5',{
+            y:200,autoAlpha:0,
+            scrollTrigger:{
+                trigger: '.row4',
+                start:'top 20%',
+                end :'top 35%',
+                scrub:true
+            }
+        })
+        AOS.init();
+    </script>
+</body>
+</html>
